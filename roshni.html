@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+text-align: center;
+}
+.box{
+display: flex;
+gap:90px;
+
+}
+
+button{
+    border-radius: 20px;
+    border: none;
+    padding: 8px 10px;
+    color: white;
+    font-weight: bold;
+}
+#btn1{
+    
+    background-color: red;
+    
+}
+#btn2{
+    background-color: rgb(8, 201, 24);
+}
+#btn3{
+    background-color: rgb(16, 16, 237);
+}
+</style>
+</head>
+
+<body>
+    <div class="main">
+    <h1>Counter</h1>
+    <h1>0</h1>
+    <div class="box">
+        <button id="btn1" onclick="lower()">Lower Count </button>
+        <button id="btn2" onclick="Reset()" >Reset</button>
+        <button id="btn3" onclick="Add()">Add Count</button>
+    </div>
+    </div>
+</div>
+<script>
+let h1=document.getElementsByTagName("h1")[1];
+function lower(){
+    h1.innerText = h1.innerText-1;
+}
+function Reset(){
+    h1.innerText=0;
+}
+function Add(){
+    h1.innerText = parseInt(h1.innerText)+1;
+}
+
+
+</script>
+</body>
+
+</html>

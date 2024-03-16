@@ -1,0 +1,68 @@
+<!-- Give me a form having name,email,password,contact,number,DOB, Select-box-for-city -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<style>
+    label{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<fieldset>
+    <legend>Employee Details</legend>
+<body>
+    <form  method="post" onsubmit="Show_data()">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required ><br><br>
+
+        <label for="last">Last Name:</label>
+        <input type="text" id="last" name="last" required ><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender">male:
+        <input type="radio" id="gender" name="gender">female:
+        <input type="radio" id="gender" name="gender">other:
+
+        <label for="Employee">Employee ID:</label>
+        <input type="employee" id="employee" name="employee" required><br><br>
+ 
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" minlength="10"|maxlength="10" required><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="chennai">Chennai</option>
+            <option value="bhopal">Bhopal</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</fieldset>
+
+    <script> 
+    // I m going to chori your data
+
+    function Show_data(){
+        let name = document.getElementById('name');
+        let last = document.getElementById('last');
+        let gender = document.getElementById('gender');
+        let employee= document.getElementById('employee');
+        let contact = document.getElementById('contact');
+        let city = document.getElementById('city');
+        document.write(name.value+"<br>")
+        document.write(last.value+"<br>")
+        document.write(gender.value+"<br>")
+        document.write(employee.value+"<br>")
+        document.write(contact.value+"<br>")
+        document.write(city.value+"<br>")
+    }
+    </script>
+    </body>
+</html>

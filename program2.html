@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inbox{
+            border:none ;
+            background-color:gold;
+            height:100px;
+            width:100px;
+            border-radius: 10px;
+
+        }
+        .box{
+            display:flex;
+            gap:6px;
+            margin:100px;
+            padding:200px;
+            text-align:center;
+        }
+        .card1{
+            background-color:olivedrab;
+        }
+        .card2{
+            background-color:indianred;
+        }
+        .card3{
+            background-color:teal;
+        }
+        .card4{
+            background-color:coral;
+        }
+        .card5{
+            background-color:aquamarine;
+        }
+        .card6{
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inbox card1" onclick="changecolor1()"></div>
+        <div class="inbox card2"onclick="changecolor2()"></div>
+        <div class="inbox card3"onclick="changecolor3()"></div>
+        <div class="inbox card4"onclick="changecolor4()"></div>
+        <div class="inbox card5"onclick="changecolor5()"></div>
+        <div class="inbox card6"onclick="changecolor6()"></div>
+    </div>
+    <script>
+        let body=document.getElementsByTagName("body")[0]
+        function changecolor1(){
+            body.style.background="olivedrab";
+        }
+        function changecolor2(){
+            body.style.background="indianred";
+        }
+        function changecolor3(){
+            body.style.background="teal";
+        }
+        function changecolor4(){
+            body.style.background="coral";
+        }
+        function changecolor5(){
+            body.style.background="aquamarine";
+        }
+        function changecolor6(){
+            body.style.background="gray";
+        }
+    </script>
+</body>
+</html>

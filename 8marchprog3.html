@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        display:flex;
+       flex-direction:column;
+       justify-content:center;
+       align-items:center;
+        }
+        .main{
+            text-align: center;
+        }
+        .box{
+            display:flex;
+            gap:90px;
+        }
+        button{
+            border-radius: 20px;
+            border:none;
+            padding:8px 10px;
+            color:white;
+            font-weigth:bold;
+        }
+        #btn1{
+            background-color:rgb(0, 0, 255);
+        }
+        #btn2{
+            background-color:rgb(255, 0, 0);
+        }
+        #btn3{
+            background-color:green
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Counter</h1>
+        <h1>0</h1>
+        <div class="box">
+            <button id="btn1" onclick="Lower()">lower</button>
+            <button id="btn2" onclick="Reset()">reset</button>
+            <button id="btn3" onclick="Add()">add</button>
+        </div>
+    </div>
+    <script>
+        let h1=document.getElementsByTagName("h1")[1];
+        function Lower(){
+            h1.innerText=h1.innerText-1;
+        }
+        function Reset(){
+            h1.innerText=0;
+        }
+        function Add(){
+            h1.innerText=parseInt(h1.innerText)+1;
+        }
+
+    </script>
+</body>
+</html>

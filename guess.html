@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     console.log("Wellcome to guessing game");
+     var guess=0;
+     var attempt=0;
+     var random=Math.floor(Math.random()*100);
+        var guess=prompt("enter your number")
+        num = parseInt(num)
+       console.log(typeof(num));
+       console.log(num);
+       console.log();
+        if(guess>random){
+            console.log("your guess is lower(rehn de chl tujse nhi hoga)");
+        }
+        else if(guess<random){
+            console.log("your guess is higher(Dimag lga)");
+        }
+        else if(guess==random){
+            console.log("your guess is right🥹");
+        }
+        else{
+            console.log("invalid number(please enter b/w 1-100)");
+        }
+        while(guess==random){
+           guess=guess+1;
+           console.log("your guess is right🥹");
+        }
+        if(guess==attempt){
+            console.log("no.of attempt");
+        }
+        else if (guess!=random){
+            console.log("invalid");
+        }
+        else {
+            console.log("exit");
+        }
+            
+
+    //    console.log("Enter a number between 1-100"); 
+    //    let num =prompt("enter your number");
+    //    num = parseInt(num)
+    //    console.log(typeof(num));
+    //    console.log(num);
+    //    console.log();
+    </script>
+</body>
+</html>

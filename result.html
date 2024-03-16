@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Percentage calculator</h1>
+    <button onclick="calculate()">start taking marks for subject</button>
+    <h4 id="maths">maths:</h4>
+    <h4 id="hindi">hindi:</h4>
+    <h4 id="english">english:</h4>
+    <h4 id="science">science:</h4>
+    <h4 id="sst">social science:</h4>
+    <h1>Average of all subject</h1>
+    <button onclick="average()">Average calculator</button>
+    <h1>Total Percentage</h1>
+    <button onclick="average()">Percentage</button>
+    <script>
+        let maths = 0, hindi = 0, english = 0, science = 0, sst = 0;
+        function calculate() {
+            maths = parseInt(propmt("Enter you maths marks"));
+            hindi = parseInt(propmt("Enter you hindi marks"));
+            english = parseInt(propmt("Enter you english marks"));
+            science = parseInt(propmt("Enter you science marks"));
+            sst = parseInt(propmt("Enter you social sst marks"));
+
+            let h4 = document.getElementsByTagName("h4");
+            h4[0].innerText = h4[0].innerText + maths;
+            h4[1].innerText = h4[1].innerText + hindi;
+            h4[2].innerText = h4[2].innerText + english;
+            h4[3].innerText = h4[3].innerText + science;
+            h4[4].innerText = h4[4].innerText + sst;
+        }
+        function average() {
+            sum = (maths + hindi + english + science + sst) / 5
+            let h1 = document.getElementsByTagName('h1')[1];
+            console.log(sum)
+            h1.innerText = h1.innerText + sum;
+        }
+    </script>
+</body>
+
+</html>
