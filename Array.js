@@ -75,3 +75,11 @@ console.log(myChildren)
 console.log(myChildren.slice(1,4))
 
 
+
+// THis is New COde of Js
+
+arr = ["check","Hello","check"]
+for (data of arr){
+    console.log(data);
+}
+
